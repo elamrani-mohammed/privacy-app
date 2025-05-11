@@ -1,25 +1,29 @@
-export default function DeleteRequest() {
+import Head from "next/head";
+
+export default function DeleteData() {
   return (
-    <main
-      style={{
-        padding: "2rem",
-        maxWidth: "600px",
-        margin: "auto",
-        fontFamily: "sans-serif",
-      }}
-    >
-      <h1>Request Account Deletion</h1>
-      <p>
-        If you&apos;d like to delete your account and all associated data,
-        please email us at:
-      </p>
-      <p>
-        <strong>mohammedamrani@email.com</strong>
-      </p>
-      <p>
-        Please include your account email and any relevant information to help
-        us identify your data.
-      </p>
-    </main>
+    <div className="min-h-screen bg-gray-50 text-gray-800 px-6 py-10">
+      <Head>
+        <title>Delete My Data</title>
+        <meta name="description" content="Request account and data deletion" />
+      </Head>
+
+      <div className="max-w-2xl mx-auto">
+        <h1 className="text-3xl font-bold mb-6 text-red-600">
+          Request Data Deletion
+        </h1>
+        <p className="mb-4">
+          We&apos;re sorry to see you go. If you&apos;d like to delete your
+          account and associated data, please email us at:
+        </p>
+        <p className="text-lg font-semibold text-red-500 mb-8">
+          smarthome@gmail.com
+        </p>
+        <p>
+          In your message, please include the email address you used to sign up
+          so we can locate your account.
+        </p>
+      </div>
+    </div>
   );
 }
